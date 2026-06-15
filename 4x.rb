@@ -11,7 +11,7 @@ class 4x < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ggwhite/4x/releases/download/v0.1.0/4x_0.1.0_darwin_amd64.tar.gz"
-      sha256 "33b201d030adc1254c3779f213fde1582d05a09209375894da257c120cfc9901"
+      sha256 "96d71c0e7537b0565e4b88368b92e5f012bf067a8208d7d87c4106d9c6fd65f0"
 
       define_method(:install) do
         bin.install "4x"
@@ -19,7 +19,7 @@ class 4x < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ggwhite/4x/releases/download/v0.1.0/4x_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e38c02155364acd4cb75383fd7376919716981baeca2adac0ca9b43077ae3f2d"
+      sha256 "8cd3a8e782db4fd3078bb0789d83d5ef48496b72b581845dacdfa6778789f8db"
 
       define_method(:install) do
         bin.install "4x"
@@ -30,14 +30,14 @@ class 4x < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ggwhite/4x/releases/download/v0.1.0/4x_0.1.0_linux_amd64.tar.gz"
-      sha256 "5d8ada016a9dde3c5f7b0ed9a2df9db8408956c9574347d923d2a390ca02bc68"
+      sha256 "d1730a045e1287ad205c5c3b34bd2b5c22fa5c14f6f1db56fbc1c52e842d4aa6"
       define_method(:install) do
         bin.install "4x"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ggwhite/4x/releases/download/v0.1.0/4x_0.1.0_linux_arm64.tar.gz"
-      sha256 "8889c2381a1bbb19827f34893c659bb8c94d53b66cec2cbaf93a83a0e19ee9cf"
+      sha256 "47e002657a0bfabd1b9f3bf5c184d3e48dafb7e13e370bc4fb848fee46a2e938"
       define_method(:install) do
         bin.install "4x"
       end
