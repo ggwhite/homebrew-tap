@@ -5,21 +5,21 @@
 class Fourx < Formula
   desc "Multi-role AI development loop — Design, Code, Review, Test"
   homepage "https://github.com/ggwhite/4x"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ggwhite/4x/releases/download/v0.3.6/4x_0.3.6_darwin_amd64.tar.gz"
-      sha256 "a831680c57d8f71140931c9c953cc6e16be4a9fc28788ef49c564eb7bf4d4e5d"
+      url "https://github.com/ggwhite/4x/releases/download/v0.3.7/4x_0.3.7_darwin_amd64.tar.gz"
+      sha256 "65fb43aafa7ca01d98859827cdd1fbca65ef0183ad31e7fdf2248f889577b67e"
 
       define_method(:install) do
         bin.install "4x"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ggwhite/4x/releases/download/v0.3.6/4x_0.3.6_darwin_arm64.tar.gz"
-      sha256 "413a82e60147ae2b66bb3d95f740e3dd5f1edc153ae64ea3c0f1fa7b69496820"
+      url "https://github.com/ggwhite/4x/releases/download/v0.3.7/4x_0.3.7_darwin_arm64.tar.gz"
+      sha256 "4f6b8425937b8f0dd1c63696f37b0a6fdb79d69acfe589df476930623bd3bd63"
 
       define_method(:install) do
         bin.install "4x"
@@ -29,15 +29,15 @@ class Fourx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ggwhite/4x/releases/download/v0.3.6/4x_0.3.6_linux_amd64.tar.gz"
-      sha256 "c91624e03ea38bab9b6ee9bd2342c0f28650486c1ca24be4c1b5548568bced44"
+      url "https://github.com/ggwhite/4x/releases/download/v0.3.7/4x_0.3.7_linux_amd64.tar.gz"
+      sha256 "abb0e9e19205d39c2ff3f5b5cabca806bf5135e22a69fc7d3fe72397adc5875b"
       define_method(:install) do
         bin.install "4x"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ggwhite/4x/releases/download/v0.3.6/4x_0.3.6_linux_arm64.tar.gz"
-      sha256 "695bcb7f5ae8858489acbd6fdb7c54a06d6af2c1096c5a821be2200eb01ba7c6"
+      url "https://github.com/ggwhite/4x/releases/download/v0.3.7/4x_0.3.7_linux_arm64.tar.gz"
+      sha256 "f164451380da845c31575bd673a2b1157ae96d1f211ff8264f32d359d553dce9"
       define_method(:install) do
         bin.install "4x"
       end
